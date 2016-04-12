@@ -1,0 +1,32 @@
+<?php
+
+	/* Configuracion de la conexión al servidor IRC */
+	$conf['irc']['host']="127.0.0.1";
+	$conf['irc']['port']=6667; //puerto
+	$conf['irc']['nick']="cheverito"; // Nick
+	
+	$conf['irc']['channels']=array("#cheverito"); // canales a los que el bot entrara al conectarse
+	$conf['irc']['prefix']="-"; //prefijo de los comandos
+	
+	$conf['nickserv']['nsuser']="cheverito"; // Usuario de nickserv
+	$conf['nickserv']['nspass']="asdf"; // Contraseña de nickserv
+	
+	$conf['m_google']['api_key']=""; // Clave de la API de google
+
+	$conf['m_weather']['api_key']=""; //wunderground.com api key
+	
+	$conf['m_short']['bitly-api']=""; //Bit.ly api key
+	$conf['m_short']['bitly-user']=""; //Bit.ly user
+	
+	$conf['core']['keepusercache']=false; // true si se desea que los usuarios sigan idenficados aun despues de que el bot haya sido reiniciado
+	
+	# No modificar
+	$conf['ormconfig'] = 'sqlite:./db/cheverito.db';
+
+/*	
+	$conf['m_translate']['cid']=""; // Client ID de microsoft translate
+	$conf['m_translate']['cs']=""; // Client Secret
+	$conf['m_translate']['authurl']="https://datamarket.accesscontrol.windows.net/v2/OAuth2-13/"; // Esto supuestamente no se debe modificar
+	$conf['m_translate']['scopeurl']="http://api.microsofttranslator.com"; // Esto tampoco
+	$conf['m_translate']['granttype']="client_credentials"; // Esto tampoco debe ser modificado :P
+		*/

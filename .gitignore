@@ -1,0 +1,10 @@
+config.php
+plugins/temp/*
+modules/tmp/*
+authinf
+log/*
+*.log
+cobot.log
+child-todo
+old/*
+db*
